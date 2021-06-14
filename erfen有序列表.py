@@ -12,7 +12,7 @@ def get_a_name(list_name, name):
     first_index = 0
     last_index = len(list_name) - 1
     while first_index < last_index:
-        mid_index = int((first_index + last_index) / 2)  # mid_index 是下下标
+        mid_index = int((first_index + last_index) / 2)  # mid_index 是下标
         """需要int转一下，否则报TypeError: list indices must be integers or slices, not float"""
         actual_element = list_name[mid_index]  # actual_element 指的是实际的list的某个元素，而mid_index是list的下标
         if actual_element == name:
